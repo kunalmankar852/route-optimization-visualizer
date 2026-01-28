@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Route Optimization — Dijkstra & A* (Leaflet + Structured Logs) - with detailed comments</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Route Optimization — Dijkstra & A*</h1>
+    <p class="sub">Click "Add node" then click the map to add nodes. Drag markers to move. Connect nodes to build graph.
+      Logs show summary and optional detailed calculations.</p>
+  </header>
+
+  <section id="controls">
+    <div class="controls-col">
+      <label for="startSelect">Start:</label>
+      <select id="startSelect"></select>
+
+      <label for="goalSelect">Goal:</label>
+      <select id="goalSelect"></select>
+
+      <button id="btnDijkstra">Run Dijkstra</button>
+      <button id="btnAstar">Run A*</button>
+      <button id="btnReset">Reset</button>
+    </div>
+
+    <div class="controls-col" style="margin-left:auto">
+      <label><input id="addNodeToggle" type="checkbox"> Add node (click map)</label>
+      <label><input id="connectToggle" type="checkbox"> Connect mode (click two nodes)</label>
+      <button id="autoConnect">Auto-connect (k=2)</button>
+      <label><input id="detailedToggle" type="checkbox"> Detailed logs</label>
+      <label><input id="stepModeToggle" type="checkbox"> Step mode</label>
+      <label>Speed: <input id="speedRange" type="range" min="50" max="1000" value="300" /></label>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <div>Distance:</div>
+        <div id="distanceLabel" class="distanceBox">—</div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="left">
+      <div id="map"></div>
+      <p style="font-size:12px; color:#6b7280; margin-top:8px;">Tip: Toggle "Add node", then click map. To connect
+        nodes: enable "Connect mode" and click two markers.</p>
+    </div>
+
+    <aside class="right">
+      <div id="edgeListWrap">
+        <h3>Edge distances (meters)</h3>
+        <div id="edgeList">(no edges yet)</div>
+      </div>
+      <div id="logWrap">
+        <h2>Logs & Debug</h2>
+        <div id="logPanel" aria-live="polite"></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer style="margin-top:10px">
+    <small>Leaflet + OSM tiles. Nodes are local markers (no external routing).</small>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script src="script.js" async>
+
+  </script>
+</body>
+
+</html>

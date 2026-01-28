@@ -1,0 +1,137 @@
+/* Page layout & basic styling */
+* {
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+}
+body {
+  margin: 12px;
+  background: #f4f6f8;
+  color: #0b1733;
+}
+header {
+  margin-bottom: 8px;
+}
+h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.sub {
+  margin: 0;
+  color: #415069;
+  font-size: 0.95rem;
+}
+
+/* Controls row */
+#controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+#controls label {
+  font-size: 0.9rem;
+}
+#controls select,
+#controls button,
+#controls input {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+/* Two-column layout: left = map, right = logs + edge list */
+main {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.left {
+  flex: 1 1 0;
+  min-width: 320px;
+}
+.right {
+  width: 420px;
+  max-width: 45vw;
+  min-width: 300px;
+}
+
+/* Map container */
+#map {
+  height: 66vh;
+  min-height: 420px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(11, 23, 51, 0.06);
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+/* Edge list (text) and logs (monospace) */
+#edgeList {
+  background: #fff;
+  border: 1px solid #e6edf7;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: monospace;
+  max-height: 150px;
+  overflow: auto;
+}
+#logPanel {
+  height: 58vh;
+  max-height: calc(100vh - 300px);
+  overflow: auto;
+  background: #0b1220;
+  color: #dbeafe;
+  padding: 10px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.2;
+  border: 1px solid #10203b;
+  white-space: pre-wrap;
+}
+.distanceBox {
+  background: #fff;
+  border: 1px solid #e6edf7;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.log-sum {
+  padding: 6px 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+}
+.log-det {
+  padding: 6px 4px;
+  color: #9ae6b4;
+  font-size: 12px;
+}
+.controls-col {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+  .right {
+    width: 100%;
+    max-width: none;
+  }
+  #map {
+    height: 55vh;
+  }
+  #logPanel {
+    height: 32vh;
+  }
+}
